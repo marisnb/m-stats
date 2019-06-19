@@ -1,0 +1,26 @@
+{
+  "name": "m-stats",
+  "version": "1.0.0",
+  "description": "This module provides functions for statistical data analysis.",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": {
+    "name": "Mariselvam S",
+    "email": "mail2mariselvam@gmail.com"
+  },
+  "keywords": [
+    "statistical",
+    "data",
+    "analysis",
+    "mean",
+    "median",
+    "range",
+    "mode",
+    "stats",
+    "learning"
+  ],
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
+}
