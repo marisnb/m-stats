@@ -7,6 +7,16 @@ const stats      = require('../lib/stats');
 
 describe('stats', function () {
 
+    describe('.sum()', function () {
+        it('returns the sum of the given numerical data', function () {
+            assert.strictEqual(stats.sum([]), 0);
+            assert.strictEqual(stats.sum([-1]), -1);
+            assert.strictEqual(stats.sum([-1, 3, 5, -1]), 6);
+            assert.strictEqual(stats.sum([-1, 3, 5, 7, 5, 5, 7]), 31);
+            assert.strictEqual(stats.sum([-1, 7, 3, 5, 4, 4, 4, 3, -1]), 28);
+        });
+    });
+
     describe('.mode()', function () {
         it('returns the mode of the given numerical data', function () {
             assert.ok(isNaN(stats.mode([])));
