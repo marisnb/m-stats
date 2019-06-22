@@ -11,14 +11,14 @@ Statistics is the study of the collection, analysis, interpretation, presentatio
   
 ### Installation  
 
-     npm install m-stats --save
+     npm install @marisnb/m-stats --save
 
 ## How to use  
   
 ### Integration  
   
 
-     const stats =  require('m-stats');  
+     const stats =  require('@marisnb/m-stats');  
 
  
 ## API  Documentation  
