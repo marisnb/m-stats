@@ -22,7 +22,15 @@ Statistics is the study of the collection, analysis, interpretation, presentatio
 
  
 ## API  Documentation  
-  
+### stats.sum(data) 
+**Sum** of all values
+
+     stats.sum([])  ===  0 
+     stats.sum([-1])  ===  -1 
+     stats.sum([-1, 3, 5, -1])  ===  6
+     stats.sum([-1, 3, 5, 7, 5, 5, 7])  ===  31
+     stats.sum([-1, 7, 3, 5, 4, 4, 4, 3, -1])  ===  28  
+     
 ### stats.mode(data)  
 **Mode** is the most common value among the given observations. For example, a person who sells ice creams might want to know which flavour is the most popular.  
 
