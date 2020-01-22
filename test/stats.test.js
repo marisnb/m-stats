@@ -4,6 +4,7 @@
 
 const assert     = require('assert');
 const stats      = require('../lib/stats');
+// const describe = require("mocha");
 
 describe('stats', function () {
 
@@ -54,6 +55,36 @@ describe('stats', function () {
             assert.strictEqual(stats.median([-1, 3, 5]), 3);
             assert.strictEqual(stats.median([-1, 3, 5, 7]), 4);
             assert.strictEqual(stats.median([-1, 7, 3, 5, 4]), 4);
+        });
+    });
+
+    describe('.min()', function () {
+        it('returns the sum of the given numerical data', function () {
+            assert.strictEqual(stats.min([]), 0);
+            assert.strictEqual(stats.min([-1]), -1);
+            assert.strictEqual(stats.min([-1, 3, 5, -1]), -1);
+            assert.strictEqual(stats.min([-1, 3, 5, 7, 5, 5, -2]), -2);
+            assert.strictEqual(stats.min([0, 7, 3, 5, 4, 4, 4, 3, 32]), 0);
+        });
+    });
+
+    describe('.max()', function () {
+        it('returns the sum of the given numerical data', function () {
+            assert.strictEqual(stats.max([]), 0);
+            assert.strictEqual(stats.max([-1]), -1);
+            assert.strictEqual(stats.max([-1, 3, 5, -1]), 5);
+            assert.strictEqual(stats.max([-1, 3, 5, 7, 5, 5, -2]), 7);
+            assert.strictEqual(stats.max([0, 7, 3, 5, 4, 4, 4, 3, 32]), 32);
+        });
+    });
+
+    describe('.avg()', function () {
+        it('returns the sum of the given numerical data', function () {
+            assert.ok(isNaN(stats.avg([])));
+            assert.strictEqual(stats.avg([-1]), -1);
+            assert.strictEqual(Number(stats.avg([-1, 3, 5, -1]).toFixed(2)), 1.5);
+            assert.strictEqual(Number(stats.avg([-1, 3, 5, 7, 5, 5, -2]).toFixed(2)), 3.14);
+            assert.strictEqual(Number(stats.avg([0, 7, 3, 5, 4, 4, 4, 3, 32]).toFixed(2)), 6.89);
         });
     });
 });

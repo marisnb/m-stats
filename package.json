@@ -1,6 +1,6 @@
 {
   "name": "@marisnb/m-stats",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This module provides functions for statistical data analysis.",
   "scripts": {
     "test": "mocha"
@@ -9,6 +9,14 @@
     "name": "Mariselvam S",
     "email": "mail2mariselvam@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marisnb/m-stats.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marisnb/m-stats/issues"
+  },
+  "homepage": "https://github.com/marisnb/m-stats",
   "keywords": [
     "statistical",
     "data",

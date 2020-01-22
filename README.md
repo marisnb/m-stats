@@ -22,6 +22,26 @@ Statistics is the study of the collection, analysis, interpretation, presentatio
 
  
 ## API  Documentation  
+
+### stats.min(data) 
+Returns the **min** value in a given data.
+
+     stats.min([])  ===  0 
+     stats.min([-1])  ===  -1 
+     stats.min([-1, 3, 5, -1])  ===  -1
+     stats.min([-1, 3, 5, 7, 5, 5, -2])  ===  -2
+     stats.min([0, 7, 3, 5, 4, 4, 4, 3, 32])  ===  0  
+     
+     
+### stats.max(data) 
+Returns the **max** value in a given data.
+
+     stats.max([])  ===  0 
+     stats.max([-1])  ===  -1 
+     stats.max([-1, 3, 5, -1])  ===  5
+     stats.max([-1, 3, 5, 7, 5, 5, -2])  ===  7
+     stats.max([0, 7, 3, 5, 4, 4, 4, 3, 32])  ===  32  
+     
 ### stats.sum(data) 
 **Sum** of all values
 
@@ -30,6 +50,15 @@ Statistics is the study of the collection, analysis, interpretation, presentatio
      stats.sum([-1, 3, 5, -1])  ===  6
      stats.sum([-1, 3, 5, 7, 5, 5, 7])  ===  31
      stats.sum([-1, 7, 3, 5, 4, 4, 4, 3, -1])  ===  28  
+     
+### stats.avg(data) 
+Returns the **avg** value in a given data.
+
+     stats.avg([])  ===  NaN 
+     stats.avg([-1])  ===  -1 
+     stats.avg([-1, 3, 5, -1])  ===  1.5
+     stats.avg([-1, 3, 5, 7, 5, 5, -2])  ===  3.14
+     stats.avg([0, 7, 3, 5, 4, 4, 4, 3, 32])  ===  6.89  
      
 ### stats.mode(data)  
 **Mode** is the most common value among the given observations. For example, a person who sells ice creams might want to know which flavour is the most popular.  
