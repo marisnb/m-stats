@@ -5,7 +5,7 @@ Statistics is the study of the collection, analysis, interpretation, presentatio
 
 > This module provides functions for statistical data analysis.  
   
-![enter image description here](https://img.shields.io/badge/npm-1.0.0-blue.svg) ![enter image description here](https://img.shields.io/badge/license-MIT-blue.svg) ![enter image description here](https://img.shields.io/badge/coverage-100%25-green.svg)  
+![enter image description here](https://img.shields.io/badge/npm-1.0.4-blue.svg) ![enter image description here](https://img.shields.io/badge/license-MIT-blue.svg) ![enter image description here](https://img.shields.io/badge/coverage-100%25-green.svg) ![enter image description here](https://img.shields.io/github/issues/marisnb/m-stats)   ![enter image description here](https://img.shields.io/snyk/vulnerabilities/github/marisnb/m-stats)  
   
 ## Getting Started  
   
