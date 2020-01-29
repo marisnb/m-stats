@@ -95,6 +95,34 @@ Returns the **avg** value in a given data.
      stats.median([-1,  3,  5])  ===  3 
      stats.median([-1,  3,  5,  7])  ===  4
      stats.median([-1,  7,  3,  5,  4])  ===  4
+     
+### stats.variance(data)  
+  **variance** is the expectation of the squared deviation of a random variable from its mean.
+
+     stats.variance([])  ===  NaN 
+     stats.variance([7])  ===  0 
+     stats.variance([1, 2, 4, 5, 7, 11])  ===  11 
+     stats.variance([3, 21, 98, 203, 17, 9])  ===  5183.25
+     stats.variance([3, 4, 4, 5, 6, 8])  ===  2.67
+     
+### stats.standardDeviation(data)  
+   the **standard deviation** is a measure of the amount of variation or dispersion of a set of values.
+
+     stats.standardDeviation([])  ===  NaN 
+     stats.standardDeviation([7])  ===  0 
+     stats.standardDeviation([1, 2, 4, 5, 7, 11])  ===  3.32 
+     stats.standardDeviation([3, 21, 98, 203, 17, 9])  === 71.99
+     stats.standardDeviation([3, 4, 4, 5, 6, 8])  ===  1.63
+ 
+### stats.harmonicMean(data)  
+   the **harmonic mean** is one of several kinds of average, and in particular one of the Pythagorean means.
+
+     stats.harmonicMean([])  ===  NaN 
+     stats.harmonicMean([7])  ===  7 
+     stats.harmonicMean([1, 2, 4])  ===  1.71 
+     stats.harmonicMean([-1, 3, 5, 7, 5, 5, -2])  === -16.52
+     stats.harmonicMean([600, 470, 430, 300, 170])  ===  326.04
+     
 ## Running Tests
 
 To run the test suite first install the development dependencies:
